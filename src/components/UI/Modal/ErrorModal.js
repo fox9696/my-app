@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from './ErrorModal.module.css';
-import Card from '../UI/Card';
-import Button from '../UI/Button/Button';
+import Card from '../Card';
+import Button from '../Button/Button';
 
 // portal 기능을 사용하기 위한 import
 import ReactDOM from 'react-dom';
-import Portal from '../UI/Portal/Portal';
+import Portal from '../Portal/Portal';
 
 const BackDrop = ({ onConfirm }) => {
   return <div className={styles.backdrop} onClick={onConfirm} />;
