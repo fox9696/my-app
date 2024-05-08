@@ -1,20 +1,17 @@
 import './App.css';
-import React, { useContext, useEffect, useState } from 'react';
-import MainHeader from './components/SideEffect/MainHeader/MainHeader';
-import Login from './components/SideEffect/Login/Login';
-import Home from './components/SideEffect/Home/Home';
-import AuthContext from './components/store/auth-context';
+import React from 'react';
 
+import Meals from './components/Food/Meals/Meals';
+import Header from './components/Food/LayOut/Header';
 const App = () => {
-  const { isLoggedIn } = useContext(AuthContext);
   return (
     <>
-      <MainHeader />
-      <main>
-        {isLoggedIn && <Home />}
-        {!isLoggedIn && <Login />}
-      </main>
+      <Header />
+      <div id='main'>
+        <Meals />
+      </div>
     </>
   );
 };
+
 export default App;
