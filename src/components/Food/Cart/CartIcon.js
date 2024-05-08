@@ -1,5 +1,4 @@
 import React from 'react';
-// import styles from './CartIcon.module.scss';
 
 const CartIcon = () => {
   return (

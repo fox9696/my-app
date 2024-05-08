@@ -1,11 +1,13 @@
 import './App.css';
 import React from 'react';
-
+import Header from './components/Food/Layout/Header';
 import Meals from './components/Food/Meals/Meals';
-import Header from './components/Food/LayOut/Header';
+import Cart from './components/Food/Cart/Cart';
+
 const App = () => {
   return (
     <>
+      <Cart />
       <Header />
       <div id='main'>
         <Meals />
