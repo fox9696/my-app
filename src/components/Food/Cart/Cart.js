@@ -41,7 +41,7 @@ const Cart = ({ onClose }) => {
       <div className={total}>
         <span>주문 총액</span>
         <span>
-          {new Intl.NumberFormat('ko-KR').format(totalPrice)}
+          {new Intl.NumberFormat('ko-KR').format(totalPrice)}원
         </span>
       </div>
       <div className={actions}>
